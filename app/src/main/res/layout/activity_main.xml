@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6DADA"
+    tools:context=".MainActivity">
+   <FrameLayout
+       android:id="@+id/framelayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+
+   <HorizontalScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <LinearLayout
+          android:layout_marginTop="20dp"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          >
+
+         <Button
+             android:id="@+id/home"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/bg"
+             android:text="Home" />
+
+         <Button
+             android:id="@+id/prime"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Prime"
+             android:background="@drawable/bg"
+             android:layout_marginLeft="5dp"/>
+
+         <Button
+             android:id="@+id/fashion"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Fashion"
+             android:background="@drawable/bg"
+             android:layout_marginLeft="5dp"/>
+
+         <Button
+             android:id="@+id/mobiles"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Mobiles"
+             android:background="@drawable/bg"
+             android:layout_marginLeft="5dp"/>
+         <Button
+             android:id="@+id/fresh"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Fresh"
+             android:background="@drawable/bg"
+             android:layout_marginLeft="5dp"/>
+      </LinearLayout>
+   </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
